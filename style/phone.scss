@@ -145,13 +145,16 @@
 
 .img-restaurant {
     max-width: 100%;
+    max-height: 300px;
     object-fit: cover;
 }
 .main-menu{
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px; 
     @include flexphone;
-    margin-top: 50px;
+    margin-top: -35px;
     background-color: #EBE7E7;
-    height: 1600px;
+    height: 1150px;
 
     .title-main {
         font-family: 'Shrikhand';
@@ -168,12 +171,41 @@
                 }
     }
 
+    .section-card {
+
+        @include card-shadow();
+        background-color: white ;
+        border-radius: 20px;
+        max-width: 75% ;
+        padding: 5px 70px 5px 10px;
+        margin-top: 10px;
+        margin-left: 2%;
+    
+        .price {
+            float: right;
+            margin-right: -20px;
+            font-weight: bolder;
+        }
+        .name-card {
+            margin-top: 5px;
+        }
+        .subtitle-card {
+            margin-top: -10px;
+
+        }
+    }
 }
 
+.center {
+    text-align: center;
+    .commander {
+        margin-top: 60px;
+        @include buttongradient;
+        padding: 20px 50px 20px 50px;
+    }
 
-.commander {
-    @include buttongradient;
 }
+
 
 .notshow {
     display: none;
