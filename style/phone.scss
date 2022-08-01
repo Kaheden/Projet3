@@ -135,8 +135,45 @@
 
 /*index end*/
 
+/*menu start*/
+
+.body-menu {
+    @include flexphone;
+    font-family: "Roboto";
+    max-width: 100%;
+}
+
+.img-restaurant {
+    max-width: 100%;
+    object-fit: cover;
+}
+.main-menu{
+    @include flexphone;
+    margin-top: 50px;
+    background-color: #EBE7E7;
+    height: 1600px;
+
+    .title-main {
+        font-family: 'Shrikhand';
+        font-weight: 350;
+        text-align: center;
+    }
+
+    .restaurant-menu-favoris {
+        float: right;
+                margin-right: 5%;
+                font-size: 28px;
+                &:hover {
+                    color: #9356DC;
+                }
+    }
+
+}
 
 
+.commander {
+    @include buttongradient;
+}
 
 .notshow {
     display: none;

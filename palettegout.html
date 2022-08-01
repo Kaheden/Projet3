@@ -10,39 +10,42 @@
         <link rel="stylesheet" media="screen and (max-width: 767px)" href="style/phone.css"/>
     </head>
 
-    <body>
-        <header>
+    <body class="body-menu">
+        <header class="header">
             <img class="logo" src="Maquettes Ohmyfood/images/logo/ohmyfood.png">
-            <img class="img-restaurant" src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
         </header>
+                
+        <img class="img-restaurant" src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant">
+        
 
-        <main>
+        <main class="main-menu">
             
-            <h2 class="title-main">La palette du goût</h2>
-            <i class="fa-regular fa-heart restaurant-card-favoris"></i>
+            <h2 class="title-main">La palette du goût <i class="fa-regular fa-heart restaurant-menu-favoris"></i></h2>
             
-            <div class="section">
-            <h4 class="title-section">Entrées</h4>
+            
+            <div class="section-menu">
+                <h4 class="title-section">Entrées</h4>
 
-            <div class="section-card">
-                <h3 class="name-card">Fricassée d'escargot</h3>
-                <div class="subtitle-card">Au pimet d'espelette</div>
-                <div class="price">25€</div>
+                <div class="section-card">
+                    <h3 class="name-card">Fricassée d'escargot</h3>
+                    <div class="subtitle-card">Au pimet d'espelette</div>
+                    <div class="price">25€</div>
+                </div>
+
+                <div class="section-card">
+                    <h3 class="name-card">Foie gras de canard mi-cuit</h3>
+                    <div class="subtitle-card">Et ses copeaux de truffe noire</div>
+                    <div class="price">35€</div>
+                </div>
+
+                <div class="section-card">
+                    <h3 class="name-card">Oeuf au plat</h3>
+                    <div class="subtitle-card">Assaisoné à la truffe sur lit de...</div>
+                    <div class="price">20€</div>
+                </div>
             </div>
 
-            <div class="section-card">
-                <h3 class="name-card">Foie gras de canard mi-cuit</h3>
-                <div class="subtitle-card">Et ses copeaux de truffe noire</div>
-                <div class="price">35€</div>
-            </div>
-
-            <div class="section-card">
-                <h3 class="name-card">Oeuf au plat</h3>
-                <div class="subtitle-card">Assaisoné à la truffe sur lit de...</div>
-                <div class="price">20€</div>
-            </div>
-
-            <div class="section">
+            <div class="section-menu">
                 <h4 class="title-section">PLATS</h4>
     
                 <div class="section-card">
@@ -64,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section-menu">
                 <h4 class="title-section">DESSERT</h4>
         
                 <div class="section-card">
@@ -90,25 +93,20 @@
 
         </main>
 
-        <footer>
-            <a href="indexP3.html">
-            <h3 class="title-footer">ohmyfood</h3>
+        <footer class="footer">
+            <a href="indexP3.html" class="nounderline">
+            <h3 class="footer-title footer-text">ohmyfood</h3>
             </a>
 
             <div class="nav-footer">
-            <a href="#">
-            <div class="flex-footer">>
-            <i class="fa-regular fa-utensils"></i>
-            <div>Proposer un restaurant</div>
-            </div>
+            <a href="#" class="nounderline">
+                
+            <div class="footer-text"><i class="fa-solid fa-utensils footer-icon"></i>Proposer un restaurant</div>
 
-            <div class="flex-footer">>
-                <i class="fa-regular fa-handshake-angle"></i>
-                <div>Devenir Partenaire</div>
-            </div>
+            <div class="footer-text"><i class="fa-solid fa-handshake-angle footer-icon footer-icon2"></i>Devenir Partenaire</div>
 
-            <div>Mentions Légales</div>
-            <div>Contact</div>
+            <div class="footer-text">Mentions Légales</div>
+            <div class="footer-text">Contact</div>
             </a>
             </div>
         </footer>
