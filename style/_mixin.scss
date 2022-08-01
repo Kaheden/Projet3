@@ -1,0 +1,57 @@
+@mixin buttongradient {
+    background: rgb(255,121,218);
+    background: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 35%);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+@mixin flexphone {
+    display: flex;
+    flex-direction: column;   
+}
+
+@mixin logosettings {
+    object-fit: contain;
+    height: 40px;
+}
+
+@mixin card-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+@mixin index-title {
+    margin-left: 1%;
+    font-size: xx-large;
+}
+
+@mixin footers {
+
+    background-color:#2A2929;
+    text-decoration-color: white;
+    height: 210px;
+    .footer-title {
+        margin-left: 3%;
+        font-family: "Shrikhand";
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    .footer-text {
+        margin-left: 3%;
+        margin-top: 10px;
+        color: white;
+    }
+    .footer-icon {
+        margin-right: 15px;
+    }
+    .footer-icon2 {
+        font-size: 11px;
+    }
+}
