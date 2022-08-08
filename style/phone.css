@@ -55,6 +55,8 @@
   font-size: 20px;
   cursor: pointer;
   border-radius: 50px;
+  max-width: 80%;
+  width: 100%;
   margin-bottom: 70px;
 }
 
@@ -82,6 +84,9 @@
 }
 .fonctionnement .fonctionnement-card .icone-info {
   padding-right: 20px;
+}
+.fonctionnement .fonctionnement-card .icone-nombre {
+  padding-right: 2px;
 }
 
 .main {
@@ -162,6 +167,7 @@
   flex-direction: column;
   font-family: "Roboto";
   max-width: 100%;
+  text-overflow: ellipsis;
 }
 
 .img-restaurant {
@@ -178,7 +184,8 @@
   flex-direction: column;
   margin-top: -35px;
   background-color: #EBE7E7;
-  height: 1150px;
+  height: 1200px;
+  margin-bottom: 10px;
 }
 .main-menu .title-main {
   font-family: "Shrikhand";
@@ -193,25 +200,130 @@
 .main-menu .restaurant-menu-favoris:hover {
   color: #9356DC;
 }
-.main-menu .section-card {
+.main-menu .title-section {
+  margin-left: 3%;
+  font-size: medium;
+  font-weight: 300;
+  border-bottom: #99E2D0;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  max-width: 10%;
+}
+.main-menu .section-menu {
+  margin-bottom: 30px;
+  /*.section-card-1 {
+      @include animationlancementdelay (200ms)
+  }
+  .section-card-2 {
+      @include animationlancementdelay (400ms)
+  }
+  .section-card-3 {
+      @include animationlancementdelay (600ms)
+  }
+  .section-card-4 {
+      @include animationlancementdelay (800ms)
+  }
+  .section-card-5 {
+      @include animationlancementdelay (1000ms)
+  }
+  .section-card-6 {
+      @include animationlancementdelay (1200ms)
+  }
+  .section-card-7 {
+      @include animationlancementdelay (1400ms)
+  }
+  .section-card-8 {
+      @include animationlancementdelay (1600ms)
+  }*/
+}
+.main-menu .section-menu .section-card {
+  height: 60px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: white;
   border-radius: 20px;
   max-width: 75%;
+  width: 100%;
   padding: 5px 70px 5px 10px;
   margin-top: 10px;
   margin-left: 2%;
+  -webkit-animation: lancement 1s ease-out;
+          animation: lancement 1s ease-out;
 }
-.main-menu .section-card .price {
+.main-menu .section-menu .section-card .name-card {
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  max-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main-menu .section-menu .section-card .subtitle-card {
+  margin-top: -10px;
+  text-overflow: ellipsis;
+  max-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main-menu .section-menu .section-card .price {
   float: right;
-  margin-right: -20px;
   font-weight: bolder;
 }
-.main-menu .section-card .name-card {
-  margin-top: 5px;
+.main-menu .section-menu .section-card-1 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
-.main-menu .section-card .subtitle-card {
+.main-menu .section-menu .section-card-2 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.main-menu .section-menu .section-card-3 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.main-menu .section-menu .section-card-4 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.main-menu .section-menu .section-card-5 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.main-menu .section-menu .section-card-6 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+.main-menu .section-menu .section-card-7 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+.main-menu .section-menu .section-card-8 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+.main-menu .section-menu .section-card-9 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.footer-menu {
   margin-top: -10px;
 }
 
@@ -219,7 +331,8 @@
   text-align: center;
 }
 .center .commander {
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: rgb(255, 121, 218);
   background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 35%);
   border: none;
@@ -231,9 +344,32 @@
   font-size: 20px;
   cursor: pointer;
   border-radius: 50px;
+  max-width: 80%;
+  width: 100%;
   padding: 20px 50px 20px 50px;
 }
 
+@-webkit-keyframes lancement {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes lancement {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .notshow {
   display: none;
   visibility: hidden;

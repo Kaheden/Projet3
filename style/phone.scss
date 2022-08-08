@@ -80,6 +80,9 @@
         .icone-info {
             padding-right: 20px;
         }
+        .icone-nombre{
+            padding-right: 2px;
+        }
     }
 
 }
@@ -143,6 +146,7 @@
     @include flexphone;
     font-family: "Roboto";
     max-width: 100%;
+    text-overflow: ellipsis;
 }
 
 .img-restaurant {
@@ -156,7 +160,8 @@
     @include flexphone;
     margin-top: -35px;
     background-color: #EBE7E7;
-    height: 1150px;
+    height: 1200px;
+    margin-bottom: 10px;
 
     .title-main {
         font-family: 'Shrikhand';
@@ -173,39 +178,123 @@
                 }
     }
 
-    .section-card {
+    .title-section {
+        margin-left: 3%;
+        font-size: medium;
+        font-weight: 300;
+        border-bottom: #99E2D0;
+        border-bottom-style: solid;
+        padding-bottom: 10px;
+        max-width: 10%;
 
-        @include card-shadow();
-        background-color: white ;
-        border-radius: 20px;
-        max-width: 75% ;
-        padding: 5px 70px 5px 10px;
-        margin-top: 10px;
-        margin-left: 2%;
-    
-        .price {
-            float: right;
-            margin-right: -20px;
-            font-weight: bolder;
-        }
-        .name-card {
-            margin-top: 5px;
-        }
-        .subtitle-card {
-            margin-top: -10px;
 
-        }
     }
+
+    .section-menu{
+        margin-bottom: 30px;
+        
+
+
+        .section-card {
+            
+            height: 60px;
+            @include card-shadow();
+            background-color: white ;
+            border-radius: 20px;
+            max-width: 75% ;
+            width: 100%;
+            padding: 5px 70px 5px 10px;
+            margin-top: 10px;
+            margin-left: 2%;
+            animation: lancement 1s ease-out;
+        
+            
+            .name-card {
+                margin-top: 5px;
+                text-overflow: ellipsis;
+                max-height: 40px;
+                white-space: nowrap;
+                overflow: hidden;
+                
+
+            }
+            .subtitle-card {
+                margin-top: -10px;
+                text-overflow: ellipsis;
+                max-height: 40px;
+                white-space: nowrap;
+                overflow: hidden;
+    
+            }
+            .price {
+                float: right;
+                font-weight: bolder;
+            }
+        }
+
+        @for $i from 1 through 9 {
+            .section-card-#{$i} {
+                animation-fill-mode: backwards;
+                animation-delay: 200ms*$i;
+            }
+        }
+
+        /*.section-card-1 {
+            @include animationlancementdelay (200ms)
+        }
+        .section-card-2 {
+            @include animationlancementdelay (400ms)
+        }
+        .section-card-3 {
+            @include animationlancementdelay (600ms)
+        }
+        .section-card-4 {
+            @include animationlancementdelay (800ms)
+        }
+        .section-card-5 {
+            @include animationlancementdelay (1000ms)
+        }
+        .section-card-6 {
+            @include animationlancementdelay (1200ms)
+        }
+        .section-card-7 {
+            @include animationlancementdelay (1400ms)
+        }
+        .section-card-8 {
+            @include animationlancementdelay (1600ms)
+        }*/
+
+    }
+    
+    
+
+   
+}
+
+.footer-menu {
+    margin-top: -10px;
 }
 
 .center {
     text-align: center;
     .commander {
-        margin-top: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         @include buttongradient;
         padding: 20px 50px 20px 50px;
     }
 
+}
+
+@keyframes lancement {
+    from {
+        opacity: 0;
+        transform: translateY(+50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 

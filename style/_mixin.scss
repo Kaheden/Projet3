@@ -10,6 +10,8 @@
     font-size: 20px;
     cursor: pointer;
     border-radius: 50px;
+    max-width: 80%;
+    width: 100%;
 }
 
 @mixin flexphone {
@@ -54,4 +56,18 @@
     .footer-icon2 {
         font-size: 11px;
     }
+}
+
+
+@mixin animationlancement($animationdelay) { 
+    animation: lancement 1s ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: $animationdelay;
+    
+}
+
+@mixin animationlancementdelay ($animationdelay) {
+    animation-fill-mode: backwards;
+    animation-delay: $animationdelay;
+    
 }
