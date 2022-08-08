@@ -250,6 +250,13 @@
   -webkit-animation: lancement 1s ease-out;
           animation: lancement 1s ease-out;
 }
+.main-menu .section-menu .section-card:not(:active) {
+  transition: width 3000ms ease-out;
+}
+.main-menu .section-menu .section-card:active {
+  width: 60%;
+  transform-origin: right;
+}
 .main-menu .section-menu .section-card .name-card {
   margin-top: 5px;
   text-overflow: ellipsis;

@@ -207,6 +207,14 @@
             margin-top: 10px;
             margin-left: 2%;
             animation: lancement 1s ease-out;
+            &:not(:active) {
+                transition: width 3000ms ease-out;
+            }
+            &:active{
+                width: 60%;
+                transform-origin: right;
+
+            }
         
             
             .name-card {
