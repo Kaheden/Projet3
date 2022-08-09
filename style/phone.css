@@ -60,6 +60,9 @@
   width: 100%;
   margin-bottom: 70px;
 }
+.intro .presentation .explore:hover {
+  background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 90%);
+}
 
 .fonctionnement {
   display: flex;
@@ -176,6 +179,7 @@
   position: absolute;
   top: 45px;
   left: 20px;
+  color: black;
 }
 
 .img-restaurant {
@@ -219,6 +223,7 @@
 }
 .main-menu .section-menu {
   margin-bottom: 30px;
+  max-width: 100%;
   /*.section-card-1 {
       @include animationlancementdelay (200ms)
   }
@@ -258,12 +263,39 @@
   -webkit-animation: lancement 1s ease-out;
           animation: lancement 1s ease-out;
 }
+@media screen and (min-width: 430px) {
+  .main-menu .section-menu .section-card {
+    max-width: 77%;
+  }
+}
+@media screen and (min-width: 470px) {
+  .main-menu .section-menu .section-card {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 530px) {
+  .main-menu .section-menu .section-card {
+    max-width: 82%;
+  }
+}
+@media screen and (min-width: 630px) {
+  .main-menu .section-menu .section-card {
+    max-width: 84%;
+  }
+}
+@media screen and (min-width: 730px) {
+  .main-menu .section-menu .section-card {
+    max-width: 85%;
+  }
+}
 .main-menu .section-menu .section-card:not(:active) {
   transition: width 3000ms ease-out;
 }
 .main-menu .section-menu .section-card:active {
   width: 60%;
   transform-origin: right;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .main-menu .section-menu .section-card .achat-validé {
   display: none;
@@ -370,6 +402,9 @@
   max-width: 80%;
   width: 100%;
   padding: 20px 50px 20px 50px;
+}
+.center .commander:hover {
+  background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 90%);
 }
 
 @-webkit-keyframes lancement {

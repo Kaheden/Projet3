@@ -201,7 +201,7 @@
             @include card-shadow();
             background-color: white ;
             border-radius: 20px;
-            max-width: 75% ;
+            max-width: 88% ;
             width: 100%;
             padding: 5px 70px 5px 10px;
             margin-top: 10px;
@@ -255,31 +255,6 @@
                 animation-delay: 200ms*$i;
             }
         }
-
-        /*.section-card-1 {
-            @include animationlancementdelay (200ms)
-        }
-        .section-card-2 {
-            @include animationlancementdelay (400ms)
-        }
-        .section-card-3 {
-            @include animationlancementdelay (600ms)
-        }
-        .section-card-4 {
-            @include animationlancementdelay (800ms)
-        }
-        .section-card-5 {
-            @include animationlancementdelay (1000ms)
-        }
-        .section-card-6 {
-            @include animationlancementdelay (1200ms)
-        }
-        .section-card-7 {
-            @include animationlancementdelay (1400ms)
-        }
-        .section-card-8 {
-            @include animationlancementdelay (1600ms)
-        }*/
 
     }
     
