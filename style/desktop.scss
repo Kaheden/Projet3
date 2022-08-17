@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+/*index*/
 .body {
     @include flexphone;
     font-family: "Roboto";
@@ -53,6 +53,7 @@
             &:hover {
                 background: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 90%)
             }
+            font-size: 50px;
         }
     }
    
@@ -73,17 +74,31 @@
         background-color: #F6F6F6;
         border-radius: 25px;
         max-width: 83%;
+        @media screen and (max-width:1250px) {
+            max-width: 81%;    
+        }
+        @media screen and (max-width:1100px) {
+            max-width: 79%;   
+        }
+        @media screen and (min-width:1000px) {
+            max-width: 77%;                
+        }
         width: 100%;
         height: 70px;
-        padding: 10px 10px 10px 27px;
+        padding: 10px 180px 10px 27px;
         font-size: large;
         margin: auto;
 
         .icone-info {
             padding-right: 20px;
         }
+        .icone-info-purple{
+            color: #9356DC;
+        }
         .icone-nombre{
             padding-right: 2px;
+            visibility: visible;
+            font-size: large;
         }
     }
 
@@ -107,6 +122,16 @@
         border-radius: 20px;
         margin-left: 2%;
         margin-right: 2%;
+        .new{
+            padding: 10px;
+            background-color: #99E2D0;
+            color:#2AA083;
+            max-width: 75px;
+            position: relative;
+            bottom: 300px;
+            left: 80%;
+
+        }
         .restaurant-card-image{
             max-width: 100%;
             height: 250px;
@@ -148,35 +173,7 @@
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
 
-            }
-         
-
-
-            /*.restaurant-card-favoris:hover > .fa-heart {
-                background: linear-gradient(to top, #FF79DA , #9356DC);
-                -webkit-background-clip: text ;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            .restaurant-card-favoris:hover > .fa-heart::after {
-                visibility: visible;
-                transform: scale(2.4);
-
-            }
-
-            .restaurant-card-favoris:active > .fa-heart {
-                background: linear-gradient(to top, #FF79DA , #9356DC);
-                -webkit-background-clip: text ;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            .restaurant-card-favoris:active > .fa-heart::after {
-                visibility: visible;
-                transform: scale(2.4);
-            }*/
-            
+            }           
         }
     }
 }
@@ -214,7 +211,7 @@
     @include flexphone;
     margin-top: -35px;
     background-color: #EBE7E7;
-    height: 1200px;
+    height: 1350px;
     margin-bottom: 10px;
 
     .title-main {
@@ -281,16 +278,28 @@
             @include card-shadow();
             background-color: white ;
             border-radius: 20px;
-            max-width: 88% ;
+            max-width: 94% ;
+            @media screen and (max-width:1600px) {
+                max-width: 93%;    
+            }
+            @media screen and (max-width:1330px) {
+                max-width: 92%;   
+            }            
+            @media screen and (max-width:1200px) {
+                max-width: 91%;                
+            }           
+            @media screen and (max-width:1050px) {
+                max-width: 90%;                
+            }
             width: 100%;
             padding: 5px 70px 5px 10px;
             margin-top: 10px;
             margin-left: 2%;
-            background: linear-gradient(to right, white 97%, #99E2D0 3%);
+            background: linear-gradient(to right, white 96%, #99E2D0 4%);
             background-size: 200% 100%;
             background-position:left bottom;
             margin-left:10px;
-            transition:all 0.6s ease;
+            transition:all 0.4s ease;
             &:hover{
                 background-position: right bottom;
                 .price {
@@ -300,28 +309,14 @@
                 .achat-validé{
                     display: block;
                     visibility: visible;
+                    -webkit-animation: roll-in-right 0.6s ease-out both;
+	                animation: roll-in-right 0.6s ease-out both;
+                    overflow: hidden;
                     
                 }
                 
 
             }
-            /*animation: lancement 1s ease-out;
-            &:not(:active) {
-                transition: width 3000ms ease-out;
-                border-radius: none;
-            }
-            &:active{
-                transform-origin: right;
-                animation-fill-mode: forwards;
-                width: 60%;
-                
-
-
-            }*/
-
-           
-        
-            
             .name-card {
                 margin-top: 5px;
                 text-overflow: ellipsis;
@@ -342,6 +337,7 @@
             .price {
                 float: right;
                 font-weight: bolder;
+                display: block;
             }
         }
 
@@ -370,40 +366,41 @@
         margin-bottom: 20px;
         @include buttongradient;
         padding: 20px 50px 20px 50px;
+        font-size: 40px;
         &:hover {
             background: linear-gradient(173deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 90%)
         }
     }
 
 }
+/*menu end*/
+/* Animation*/
 
-@keyframes lancement2 {
-    
+@-webkit-keyframes roll-in-right {
     0% {
-        transform: scaleX(0);
-
+      -webkit-transform: translateX(50px) rotate(540deg);
+              transform: translateX(50px) rotate(540deg);
+      opacity: 0;
     }
-    30%{
-        transform: scaleX(1);
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
     }
-    
-    
-}
-
-@keyframes lancement {
-    from {
-        opacity: 0;
-        transform: translateY(+50px);
+  }
+  @keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(50px) rotate(540deg);
+        transform: translateX(50px) rotate(540deg);
+      opacity: 0;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-        
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
     }
-}
+  }
+  
+/* Animation*/
 
 
-.notshow {
-    display: none;
-    visibility: hidden;
-}
