@@ -81,12 +81,22 @@
   transition: 0.3s;
   background-color: #F6F6F6;
   border-radius: 25px;
-  max-width: 83%;
+  max-width: 87%;
   width: 100%;
   height: 70px;
   padding: 10px 180px 10px 27px;
   font-size: large;
   margin: auto;
+}
+@media screen and (max-width: 10px) {
+  .fonctionnement .fonctionnement-card {
+    max-width: 85%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .fonctionnement .fonctionnement-card {
+    max-width: 83%;
+  }
 }
 @media screen and (max-width: 1250px) {
   .fonctionnement .fonctionnement-card {
@@ -98,7 +108,7 @@
     max-width: 79%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .fonctionnement .fonctionnement-card {
     max-width: 77%;
   }

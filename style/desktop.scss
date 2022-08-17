@@ -73,14 +73,20 @@
         @include card-shadow();
         background-color: #F6F6F6;
         border-radius: 25px;
-        max-width: 83%;
+        max-width: 87%;
+        @media screen and (max-width:10px) {
+            max-width: 85%;    
+        }
+        @media screen and (max-width:1400px) {
+            max-width: 83%;    
+        }
         @media screen and (max-width:1250px) {
             max-width: 81%;    
         }
         @media screen and (max-width:1100px) {
             max-width: 79%;   
         }
-        @media screen and (min-width:1000px) {
+        @media screen and (max-width:1000px) {
             max-width: 77%;                
         }
         width: 100%;
