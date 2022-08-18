@@ -80,6 +80,36 @@
   gap: 25px;
   margin-bottom: 20px;
 }
+.fonctionnement #fonctionnement-span-1 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.4em 0.7em;
+  left: 13px;
+  top: 639px;
+}
+.fonctionnement #fonctionnement-span-2 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.4em 0.7em;
+  left: 13px;
+  top: 823px;
+}
+.fonctionnement #fonctionnement-span-3 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.4em 0.7em;
+  left: 13px;
+  top: 937px;
+}
 .fonctionnement .fonctionnement-title {
   margin-left: 1%;
   font-size: xx-large;

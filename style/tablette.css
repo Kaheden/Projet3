@@ -88,6 +88,36 @@
   font-size: large;
   margin: auto;
 }
+.fonctionnement .fonctionnement-card #fonctionnement-span-1 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.6em 0.9em;
+  left: 2px;
+  top: 707px;
+}
+.fonctionnement .fonctionnement-card #fonctionnement-span-2 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.6em 0.9em;
+  left: 2px;
+  top: 823px;
+}
+.fonctionnement .fonctionnement-card #fonctionnement-span-3 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.6em 0.9em;
+  left: 2px;
+  top: 937px;
+}
 @media screen and (max-width: 870px) {
   .fonctionnement .fonctionnement-card {
     max-width: 74%;

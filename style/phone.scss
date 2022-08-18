@@ -69,6 +69,36 @@
 }
 
 .fonctionnement {
+    #fonctionnement-span-1{
+        border-radius: 85%;
+        background-color: #9356DC;
+        color: white;
+        position: absolute;
+        font-size: 0.8em;
+        padding: 0.4em 0.7em;
+        left: 13px;
+        top: 639px;
+    }
+    #fonctionnement-span-2{
+        border-radius: 85%;
+        background-color: #9356DC;
+        color: white;
+        position: absolute;
+        font-size: 0.8em;
+        padding: 0.4em 0.7em;
+        left: 13px;
+        top: 823px;
+    }
+    #fonctionnement-span-3{
+        border-radius: 85%;
+        background-color: #9356DC;
+        color: white;
+        position: absolute;
+        font-size: 0.8em;
+        padding: 0.4em 0.7em;
+        left: 13px;
+        top: 937px;
+    }
     @include flexphone;
     gap: 25px;
     margin-bottom: 20px;
@@ -127,6 +157,7 @@
     }
 
     .restaurant-card{
+        
         @include card-shadow();
         margin-top: 30px;
         max-width: 95%;
