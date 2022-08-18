@@ -283,6 +283,12 @@
 
 
         .section-card {
+            .flex-description-price{
+                display: flex;
+            }
+            .description{
+               max-width: 250px;
+            }
             
             .achat-validé{
                 float: right;
@@ -384,6 +390,7 @@
             .price {
                 float: right;
                 font-weight: bolder;
+                
                 
             }
         }

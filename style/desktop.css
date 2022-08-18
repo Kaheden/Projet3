@@ -88,6 +88,36 @@
   font-size: large;
   margin: auto;
 }
+.fonctionnement .fonctionnement-card #fonctionnement-span-1 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.6em 0.9em;
+  left: 2px;
+  top: 707px;
+}
+.fonctionnement .fonctionnement-card #fonctionnement-span-2 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.6em 0.9em;
+  left: 2px;
+  top: 823px;
+}
+.fonctionnement .fonctionnement-card #fonctionnement-span-3 {
+  border-radius: 85%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.6em 0.9em;
+  left: 2px;
+  top: 937px;
+}
 @media screen and (max-width: 10px) {
   .fonctionnement .fonctionnement-card {
     max-width: 85%;
@@ -301,6 +331,12 @@
   margin-left: 10px;
   transition: all 0.4s ease;
 }
+.main-menu .section-menu .section-card .flex-descritption-price {
+  display: flex;
+}
+.main-menu .section-menu .section-card .flex-descritption-price .description {
+  margin-right: 5px;
+}
 .main-menu .section-menu .section-card .achat-validé {
   float: right;
   position: relative;
@@ -362,6 +398,9 @@
   float: right;
   font-weight: bolder;
   display: block;
+  /*position: relative;
+  bottom: 30px;
+  left: 500px;*/
 }
 .main-menu .section-menu .section-card-1 {
   -webkit-animation-fill-mode: backwards;

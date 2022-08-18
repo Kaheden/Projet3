@@ -70,6 +70,36 @@
     }
 
     .fonctionnement-card{
+        #fonctionnement-span-1{
+            border-radius: 85%;
+            background-color: #9356DC;
+            color: white;
+            position: absolute;
+            font-size: 0.8em;
+            padding: 0.6em 0.9em;
+            left: 2px;
+            top: 707px;
+        }
+        #fonctionnement-span-2{
+            border-radius: 85%;
+            background-color: #9356DC;
+            color: white;
+            position: absolute;
+            font-size: 0.8em;
+            padding: 0.6em 0.9em;
+            left: 2px;
+            top: 823px;
+        }
+        #fonctionnement-span-3{
+            border-radius: 85%;
+            background-color: #9356DC;
+            color: white;
+            position: absolute;
+            font-size: 0.8em;
+            padding: 0.6em 0.9em;
+            left: 2px;
+            top: 937px;
+        }
         @include card-shadow();
         background-color: #F6F6F6;
         border-radius: 25px;
@@ -119,7 +149,6 @@
     .main-title {
         @include index-title;
     }
-
     .restaurant-card{
         @include card-shadow();
         margin-top: 30px;
@@ -267,6 +296,13 @@
 
 
         .section-card {
+            .flex-descritption-price{
+                display: flex;
+                .description{
+                    margin-right: 5px;
+                }
+
+            }
 
             .achat-validé{
                 float: right;
@@ -344,6 +380,9 @@
                 float: right;
                 font-weight: bolder;
                 display: block;
+                /*position: relative;
+                bottom: 30px;
+                left: 500px;*/
             }
         }
 
