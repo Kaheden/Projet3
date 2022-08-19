@@ -90,6 +90,44 @@
   left: 13px;
   top: 639px;
 }
+@media screen and (max-width: 709px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 670px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 660px;
+  }
+}
+@media screen and (max-width: 574px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 650px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 692px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 720px;
+    left: 6px;
+  }
+}
+@media screen and (max-width: 297px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 765px;
+    left: 6px;
+  }
+}
+@media screen and (max-width: 287px) {
+  .fonctionnement #fonctionnement-span-1 {
+    top: 792px;
+    left: 6px;
+  }
+}
 .fonctionnement #fonctionnement-span-2 {
   border-radius: 85%;
   background-color: #9356DC;
@@ -98,7 +136,45 @@
   font-size: 0.8em;
   padding: 0.4em 0.7em;
   left: 13px;
-  top: 823px;
+  top: 757px;
+}
+@media screen and (max-width: 709px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 785px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 775px;
+  }
+}
+@media screen and (max-width: 574px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 765px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 807px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 835px;
+    left: 6px;
+  }
+}
+@media screen and (max-width: 297px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 877px;
+    left: 6px;
+  }
+}
+@media screen and (max-width: 287px) {
+  .fonctionnement #fonctionnement-span-2 {
+    top: 907px;
+    left: 6px;
+  }
 }
 .fonctionnement #fonctionnement-span-3 {
   border-radius: 85%;
@@ -108,7 +184,45 @@
   font-size: 0.8em;
   padding: 0.4em 0.7em;
   left: 13px;
-  top: 937px;
+  top: 872px;
+}
+@media screen and (max-width: 709px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 901px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 890px;
+  }
+}
+@media screen and (max-width: 574px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 880px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 922px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 950px;
+    left: 6px;
+  }
+}
+@media screen and (max-width: 297px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 992px;
+    left: 6px;
+  }
+}
+@media screen and (max-width: 287px) {
+  .fonctionnement #fonctionnement-span-3 {
+    top: 1022px;
+    left: 6px;
+  }
 }
 .fonctionnement .fonctionnement-title {
   margin-left: 1%;

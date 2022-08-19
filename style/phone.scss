@@ -78,6 +78,30 @@
         padding: 0.4em 0.7em;
         left: 13px;
         top: 639px;
+        @media screen and (max-width: 709px) {
+            top: 670px;            
+        }
+        @media screen and (max-width: 699px) {
+            top: 660px;            
+        }
+        @media screen and (max-width: 574px) {
+            top: 650px;            
+        }
+        @media screen and (max-width: 500px) {
+            top: 692px;            
+        }
+        @media screen and (max-width: 419px) {
+            top: 720px;
+            left: 6px;            
+        }
+        @media screen and (max-width: 297px) {
+            top: 765px;     
+            left: 6px;        
+        }
+        @media screen and (max-width: 287px) {
+            top: 792px;     
+            left: 6px;        
+        }
     }
     #fonctionnement-span-2{
         border-radius: 85%;
@@ -87,7 +111,31 @@
         font-size: 0.8em;
         padding: 0.4em 0.7em;
         left: 13px;
-        top: 823px;
+        top: 757px;
+        @media screen and (max-width: 709px) {
+            top: 785px;            
+        }
+        @media screen and (max-width: 699px) {
+            top: 775px;            
+        }
+        @media screen and (max-width: 574px) {
+            top: 765px;            
+        }
+        @media screen and (max-width: 500px) {
+            top: 807px;            
+        }
+        @media screen and (max-width: 419px) {
+            top: 835px;
+            left: 6px;           
+        }
+        @media screen and (max-width: 297px) {
+            top: 877px;     
+            left: 6px;        
+        }
+        @media screen and (max-width: 287px) {
+            top: 907px;     
+            left: 6px;        
+        }
     }
     #fonctionnement-span-3{
         border-radius: 85%;
@@ -97,7 +145,32 @@
         font-size: 0.8em;
         padding: 0.4em 0.7em;
         left: 13px;
-        top: 937px;
+        top: 872px;
+        @media screen and (max-width: 709px) {
+            top: 901px;            
+        }
+        @media screen and (max-width: 699px) {
+            top: 890px;            
+        }
+        @media screen and (max-width: 574px) {
+            top: 880px;            
+        }
+        @media screen and (max-width: 500px) {
+            top: 922px;            
+        }
+        @media screen and (max-width: 419px) {
+            top: 950px;     
+            left: 6px;        
+        }
+        @media screen and (max-width: 297px) {
+            top: 992px;     
+            left: 6px;        
+        }
+        @media screen and (max-width: 287px) {
+            top: 1022px;     
+            left: 6px;        
+        }
+
     }
     @include flexphone;
     gap: 25px;
