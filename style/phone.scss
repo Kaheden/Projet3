@@ -389,9 +389,12 @@
         .section-card {
             .flex-description-price{
                 display: flex;
+                flex-direction: row ;
+                gap: 1px;
             }
             .description{
                max-width: 250px;
+               white-space: nowrap;
             }
             
             .achat-validé{
@@ -400,7 +403,7 @@
                 bottom: 35px;
                 left: 25px;
                 font-size: x-large;
-                visibility: hidden;
+                visibility:hidden;
                 color: #EAEAEA ;
                
                 
@@ -441,6 +444,7 @@
             padding: 5px 70px 5px 10px;
             margin-top: 10px;
             margin-left: 2%;
+            animation: lancement 1s ease-out;
             background: linear-gradient(to right, white 88%, #99E2D0 12%);
             background-size: 200% 100%;
             background-position:left bottom;
@@ -456,8 +460,8 @@
             &:hover{
                 background-position: right bottom;
                 .price {
-                    position: relative;
-                    right: 100px;
+                    position: absolute;
+                    right: 130px;
                 }
                 .achat-validé{
                     display: block;
@@ -492,8 +496,10 @@
     
             }
             .price {
-                float: right;
+                margin-top: 37px;
                 font-weight: bolder;
+                position: absolute;
+                right: 48px;
                 
                 
             }
@@ -523,6 +529,17 @@
               opacity: 1;
             }
           }
+
+          @keyframes lancement {
+            from {
+                opacity: 0;
+                transform: translateY(+50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
 
         @for $i from 1 through 9 {
             .section-card-#{$i} {

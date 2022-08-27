@@ -486,6 +486,8 @@
   padding: 5px 70px 5px 10px;
   margin-top: 10px;
   margin-left: 2%;
+  -webkit-animation: lancement 1s ease-out;
+          animation: lancement 1s ease-out;
   background: linear-gradient(to right, white 88%, #99E2D0 12%);
   background-size: 200% 100%;
   background-position: left bottom;
@@ -494,9 +496,12 @@
 }
 .main-menu .section-menu .section-card .flex-description-price {
   display: flex;
+  flex-direction: row;
+  gap: 1px;
 }
 .main-menu .section-menu .section-card .description {
   max-width: 250px;
+  white-space: nowrap;
 }
 .main-menu .section-menu .section-card .achat-validé {
   float: right;
@@ -565,8 +570,8 @@
   background-position: right bottom;
 }
 .main-menu .section-menu .section-card:hover .price {
-  position: relative;
-  right: 100px;
+  position: absolute;
+  right: 130px;
 }
 .main-menu .section-menu .section-card:hover .achat-validé {
   display: block;
@@ -590,8 +595,10 @@
   overflow: hidden;
 }
 .main-menu .section-menu .section-card .price {
-  float: right;
+  margin-top: 37px;
   font-weight: bolder;
+  position: absolute;
+  right: 48px;
 }
 @-webkit-keyframes roll-in-right {
   0% {
@@ -611,6 +618,26 @@
   100% {
     transform: translateX(0) rotate(0deg);
     opacity: 1;
+  }
+}
+@-webkit-keyframes lancement {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes lancement {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 .main-menu .section-menu .section-card-1 {

@@ -1,0 +1,5 @@
+Prendre toute la largeur de l'écran, sur la dimension 1920/1080
+
+Media queries pour prendre l'espace en trop
+
+Reposition le prix, trunker le text, media queries sur l'animation

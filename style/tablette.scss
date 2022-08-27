@@ -336,6 +336,7 @@
             padding: 5px 70px 5px 10px;
             margin-top: 10px;
             margin-left: 2%;
+            animation: lancement 1s ease-out;
             background: linear-gradient(to right, white 93%, #99E2D0 7%);
             background-size: 200% 100%;
             background-position:left bottom;
@@ -423,17 +424,15 @@
 
 }
 
-@keyframes lancement2 {
-    
-    0% {
-        transform: scaleX(0);
-
+@keyframes lancement {
+    from {
+        opacity: 0;
+        transform: translateY(+50px);
     }
-    30%{
-        transform: scaleX(1);
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
-    
-    
 }
 
 
