@@ -310,7 +310,7 @@
                 bottom: 35px;
                 left: 25px;
                 font-size: x-large;
-                visibility: hidden;
+                visibility:hidden;
                 color: #EAEAEA ;
                
                 
@@ -346,8 +346,8 @@
             &:hover{
                 background-position: right bottom;
                 .price {
-                    position: relative;
-                    right: 100px;
+                    position: absolute;
+                    right: 200px;
                 }
                 .achat-validé{
                     display: block;
@@ -378,9 +378,10 @@
     
             }
             .price {
-                float: right;
+                margin-top: -20px;
                 font-weight: bolder;
-                display: block;
+                position: absolute;
+                right: 48px;
                 /*position: relative;
                 bottom: 30px;
                 left: 500px;*/

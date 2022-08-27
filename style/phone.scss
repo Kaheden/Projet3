@@ -16,7 +16,7 @@
 }
 
 
-
+/*Page Index Start*/
 .header {
     @include flexphone;
     .logo   {
@@ -191,15 +191,6 @@
         @media screen and (max-width:775px) {
             max-width: 91%;   
         }
-        /*@media screen and (min-width:1000px) {
-            max-width: 77%;                
-        }
-        @media screen and (min-width:630px) {
-            max-width: 84%;                
-        }
-        @media screen and (min-width:730px) {
-            max-width: 85%;                
-        }*/
         width: 100%;
         height: 70px;
         padding: 10px 10px 10px 27px;
@@ -219,7 +210,7 @@
 
 }
 
-
+/*Restaurant Choice Start*/
 .main {
     @include flexphone;
     margin-top: 50px;
@@ -302,11 +293,12 @@
         }
     }
 }
+/*Restaurant Choice End*/
 .footer {
     @include footers;
 }
 
-/*index end*/
+/*Page Index End*/
 
 /*menu start*/
 
@@ -329,6 +321,7 @@
     max-height: 300px;
     object-fit: cover;
 }
+/*menu item start*/
 .main-menu{
     border-top-right-radius: 40px;
     border-top-left-radius: 40px; 
@@ -462,6 +455,31 @@
                 .price {
                     position: absolute;
                     right: 130px;
+                    @media screen and (max-width:767px) {
+                        right: 200px;
+                    }
+                    @media screen and (max-width:600px) {
+                        right: 160px;
+                    }
+                    @media screen and (max-width:500px) {
+                        right: 130px;
+                    }
+
+                }
+                .subtitle-card{
+                    width: 180px;
+                    @media screen and (max-width:360px) {
+                        width: 160px;
+                    }
+                    @media screen and (max-width:335px) {
+                        width: 135px;
+                    }
+                    @media screen and (min-width:460px) {
+                        width: 260px;
+                    }
+                    @media screen and (min-width:510px) {
+                        width: 300px;
+                    }
                 }
                 .achat-validé{
                     display: block;
@@ -493,6 +511,13 @@
                 max-height: 40px;
                 white-space: nowrap;
                 overflow: hidden;
+                @media screen and (max-width:375px) {
+                    width: 235px;
+                }
+
+                @media screen and (max-width:335px) {
+                    width: 215px;
+                }
     
             }
             .price {
@@ -548,37 +573,13 @@
             }
         }
 
-        /*.section-card-1 {
-            @include animationlancementdelay (200ms)
-        }
-        .section-card-2 {
-            @include animationlancementdelay (400ms)
-        }
-        .section-card-3 {
-            @include animationlancementdelay (600ms)
-        }
-        .section-card-4 {
-            @include animationlancementdelay (800ms)
-        }
-        .section-card-5 {
-            @include animationlancementdelay (1000ms)
-        }
-        .section-card-6 {
-            @include animationlancementdelay (1200ms)
-        }
-        .section-card-7 {
-            @include animationlancementdelay (1400ms)
-        }
-        .section-card-8 {
-            @include animationlancementdelay (1600ms)
-        }*/
-
     }/*animation end*/
     
     
 
    
 }
+/*menu item end*/
 
 .footer-menu {
     margin-top: -10px;

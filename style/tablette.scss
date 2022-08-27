@@ -345,8 +345,8 @@
             &:hover{
                 background-position: right bottom;
                 .price {
-                    position: relative;
-                    right: 100px;
+                    position: absolute;
+                    right: 200px;
                 }
                 .achat-validé{
                     display: block;
@@ -382,9 +382,10 @@
     
             }
             .price {
-                float: right;
+                margin-top: -15px;
                 font-weight: bolder;
-                display: block;
+                position: absolute;
+                right: 48px;
             }
         }
 

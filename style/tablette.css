@@ -350,8 +350,8 @@
   background-position: right bottom;
 }
 .main-menu .section-menu .section-card:hover .price {
-  position: relative;
-  right: 100px;
+  position: absolute;
+  right: 200px;
 }
 .main-menu .section-menu .section-card:hover .achat-validé {
   display: block;
@@ -375,9 +375,10 @@
   overflow: hidden;
 }
 .main-menu .section-menu .section-card .price {
-  float: right;
+  margin-top: -15px;
   font-weight: bolder;
-  display: block;
+  position: absolute;
+  right: 48px;
 }
 .main-menu .section-menu .section-card-1 {
   -webkit-animation-fill-mode: backwards;
