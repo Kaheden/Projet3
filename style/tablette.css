@@ -30,6 +30,11 @@
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
+  -webkit-animation: disparitionw 0s;
+          animation: disparitionw 0s;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .load::after {
@@ -554,6 +559,26 @@
   }
   to {
     opacity: 0;
+  }
+}
+@-webkit-keyframes disparitionw {
+  from {
+    width: 100vw;
+    height: 100vh;
+  }
+  to {
+    width: 0vw;
+    height: 0vh;
+  }
+}
+@keyframes disparitionw {
+  from {
+    width: 100vw;
+    height: 100vh;
+  }
+  to {
+    width: 0vw;
+    height: 0vh;
   }
 }
 @-webkit-keyframes apparition {

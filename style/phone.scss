@@ -32,7 +32,9 @@
     animation: disparition 0.5s;
     animation-fill-mode: forwards;
     animation-delay: 2.5s;
-    
+    animation: disparitionw 0s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;   
 }
 
 .load::after {
@@ -45,6 +47,8 @@
     animation: charge 3s ease;
     
 }
+
+
 
 .header {
     @include flexphone;
@@ -594,6 +598,18 @@
         @keyframes disparition {
             from {opacity: 1;}
             to {opacity: 0;}
+            
+        }
+
+        @-webkit-keyframes disparitionw {
+            from {width: 100vw; height: 100vh;}
+            to {width: 0vw; height: 0vh;}
+            
+        }
+
+        @keyframes disparitionw {
+            from {width: 100vw; height: 100vh;}
+            to {width: 0vw; height: 0vh;}
             
         }
         @-webkit-keyframes apparition {
