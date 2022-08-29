@@ -12,6 +12,37 @@
   text-decoration: none;
 }
 
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  background: white;
+  transition: opacity 0.5s, visibility 0.5s;
+  -webkit-animation: disparition 0.5s;
+          animation: disparition 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.load::after {
+  content: "";
+  width: 125px;
+  height: 125px;
+  border: 20px solid white;
+  border-top-color: #9356DC;
+  border-radius: 50%;
+  -webkit-animation: charge 3s ease;
+          animation: charge 3s ease;
+}
+
 .header {
   text-align: center;
 }
@@ -87,6 +118,12 @@
   margin: auto;
 }
 .fonctionnement .fonctionnement-card #fonctionnement-span-1 {
+  -webkit-animation: apparition 2.75s;
+          animation: apparition 2.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
   border-radius: 85%;
   background-color: #9356DC;
   color: white;
@@ -97,6 +134,12 @@
   top: 707px;
 }
 .fonctionnement .fonctionnement-card #fonctionnement-span-2 {
+  -webkit-animation: apparition 2.75s;
+          animation: apparition 2.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
   border-radius: 85%;
   background-color: #9356DC;
   color: white;
@@ -107,6 +150,12 @@
   top: 823px;
 }
 .fonctionnement .fonctionnement-card #fonctionnement-span-3 {
+  -webkit-animation: apparition 2.75s;
+          animation: apparition 2.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
   border-radius: 85%;
   background-color: #9356DC;
   color: white;
@@ -155,6 +204,12 @@
   margin-right: 2%;
 }
 .main .restaurant-card .new {
+  -webkit-animation: apparition 2.75s;
+          animation: apparition 2.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
   padding: 10px;
   background-color: #99E2D0;
   color: #2AA083;
@@ -206,10 +261,11 @@
 }
 .main .restaurant-card .restaurant-card-text .restaurant-card-favoris {
   float: right;
-  margin-right: 3%;
+  margin-right: 5%;
   font-size: 28px;
-  background: linear-gradient(179deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 95%);
-  color: black;
+}
+.main .restaurant-card .restaurant-card-text .restaurant-card-favoris:hover {
+  color: #9356DC;
 }
 .main .restaurant-card .restaurant-card-text .restaurant-card-favoris:before {
   display: block;
@@ -468,6 +524,54 @@
   background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 90%);
 }
 
+@-webkit-keyframes charge {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(3turn);
+  }
+}
+@keyframes charge {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(3turn);
+  }
+}
+@-webkit-keyframes disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes lancement {
   from {
     opacity: 0;
@@ -478,7 +582,6 @@
     transform: translateY(0px);
   }
 }
-
 @keyframes lancement {
   from {
     opacity: 0;

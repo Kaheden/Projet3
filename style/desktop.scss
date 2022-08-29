@@ -13,7 +13,34 @@
 .nounderline {
     text-decoration: none;
 }
+.load {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    background: white;
+    transition: opacity 0.5s, visibility 0.5s;
+    animation: disparition 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    
+}
 
+.load::after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    border: 20px solid white;
+    border-top-color: #9356DC;
+    border-radius: 50%;
+    animation: charge 3s ease;
+    
+}
 .header {
     text-align: center;
     .logo   {
@@ -70,6 +97,9 @@
 
     .fonctionnement-card{
         #fonctionnement-span-1{
+            animation: apparition 2.75s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-end;
             border-radius: 85%;
             background-color: #9356DC;
             color: white;
@@ -80,6 +110,9 @@
             top: 707px;
         }
         #fonctionnement-span-2{
+            animation: apparition 2.75s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-end;
             border-radius: 85%;
             background-color: #9356DC;
             color: white;
@@ -90,6 +123,9 @@
             top: 823px;
         }
         #fonctionnement-span-3{
+            animation: apparition 2.75s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-end;
             border-radius: 85%;
             background-color: #9356DC;
             color: white;
@@ -157,6 +193,9 @@
         margin-left: 2%;
         margin-right: 2%;
         .new{
+            animation: apparition 2.75s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-end;
             padding: 10px;
             background-color: #99E2D0;
             color:#2AA083;
@@ -185,10 +224,11 @@
             
             .restaurant-card-favoris{
                 float: right;
-                margin-right: 3%;
+                margin-right: 5%;
                 font-size: 28px;
-                background: linear-gradient(179deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 95%);
-                color: black;
+                &:hover {
+                    color: #9356DC;
+                }
                 
             }
             
@@ -421,6 +461,36 @@
 }
 /*menu end*/
 /* Animation*/
+@-webkit-keyframes charge {
+    from {transform: rotate(0turn) }
+    to  {transform: rotate(3turn) }
+}
+
+@keyframes charge {
+    from {transform: rotate(0turn) }
+    to  {transform: rotate(3turn) }
+}
+
+@-webkit-keyframes disparition {
+    from {opacity: 1;}
+    to {opacity: 0;}
+    
+}
+
+@keyframes disparition {
+    from {opacity: 1;}
+    to {opacity: 0;}
+    
+}
+@-webkit-keyframes apparition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes apparition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 @keyframes lancement {
     from {
         opacity: 0;
