@@ -574,6 +574,12 @@
                 
                 
             }
+            @for $i from 1 through 9 {
+                .section-card-#{$i} {
+                    animation-fill-mode: backwards;
+                    animation-delay: 200ms*$i;
+                }
+            }
         }
     }
 }
@@ -672,12 +678,7 @@
             }
         }
 
-        @for $i from 1 through 9 {
-            .section-card-#{$i} {
-                animation-fill-mode: backwards;
-                animation-delay: 200ms*$i;
-            }
-        }
+        
 
     /*animation end*/
     
